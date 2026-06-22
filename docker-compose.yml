@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   zb:
-    build: .
+    image: tszy333/zb:latest
     container_name: zb
     ports:
       - "5000:5000"
