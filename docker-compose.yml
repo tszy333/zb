@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  zb:
+    build: .
+    container_name: zb
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/data
+    environment:
+      - CONFIG_PATH=/data/config.json
+      - PORT=5000
+    restart: unless-stopped
